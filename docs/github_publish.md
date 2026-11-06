@@ -1,21 +1,25 @@
-# GitHub publication status and retry
+# GitHub publication and account setup
 
 The repository is configured as `https://github.com/tanveerk24/MathMyst.git`.
 Its original commit and MIT license were preserved. Completed implementation,
-tests, documentation, and screenshots have been committed locally on `main`.
+tests, documentation, and screenshots are published on `main`.
 
-The push attempted on **6 November 2026** failed with this actual response:
+Publication succeeded on **6 November 2026** after signing in as `tanveerk24`.
+The push advanced the existing remote branch from `86405e2` to `18c434b`,
+preserving its history. The repository selects `tanveerk24` through its local
+`credential.https://github.com.username` setting.
+
+The earlier attempt with the other account failed with this response:
 
 ```text
 remote: Permission to tanveerk24/MathMyst.git denied to tanveerk13.
 fatal: unable to access 'https://github.com/tanveerk24/MathMyst.git/': The requested URL returned error: 403
 ```
 
-Git Credential Manager has an account for `tanveerk13`; that account currently
-does not have write access to the supplied repository. No code was pushed.
-The local application is independent of GitHub and remains usable.
+That attempt used `tanveerk13`, which lacked write access. Signing in as
+`tanveerk24` resolved the error. The local application is independent of GitHub.
 
-## Authenticate and retry from Windows PowerShell
+## Reconnect from Windows PowerShell if needed
 
 Sign in as the repository owner, or another account with write access. For the
 owner account, run these commands and complete the browser sign-in yourself:
