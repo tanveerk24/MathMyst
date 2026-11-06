@@ -5,6 +5,9 @@
 
 GitHub repository: [tanveerk24/MathMyst](https://github.com/tanveerk24/MathMyst).
 
+The local project is complete and verified. The initial push was rejected because
+the available GitHub account lacks access; see the [publication status and exact retry commands](docs/github_publish.md).
+
 MathMyst is a local Flask and MySQL/MariaDB application for exploring mathematical problems, mathematicians, and their research contributions. It combines a research catalogue with a database dashboard and an educational SQL query laboratory.
 
 This project is designed for a third-year Computer Science DBMS laboratory examination. The code uses explicit SQL and three related entities so that the database design and query behavior remain easy to inspect and explain.
